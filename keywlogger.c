@@ -91,7 +91,7 @@ int main(int argc, char **argv) {
 
    uint8_t shift_pressed = 0;
    input_event event;
-   char key[] = {'@', '3', 'd', 'k', 'A', '4', '\'', '%', '3'};
+   char key[] = {'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A'};
    unsigned long dataLen;
    unsigned long keyLen = strlen(key);
    char * buf = malloc(sizeof(char) * BUF_SIZE);
