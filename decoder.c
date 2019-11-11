@@ -13,14 +13,14 @@ char* XORCipher(char* data, char* key, unsigned long dataLen, unsigned long keyL
 
 int main(){
 
-    char key[] = {'@', '3', 'd', 'k', 'A', '4', '\'', '%', '3'};
+    char key[] = {'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A'};
 
     FILE *fp;
     long lSize;
     char *buffer;
 
-    fp = fopen ( "skeylogger.log" , "rb" );
-    if( !fp ) perror("skeylogger.log"),exit(1);
+    fp = fopen ( "keywlogger.log" , "rb" );
+    if( !fp ) perror("keywlogger.log"),exit(1);
     fseek( fp , 0L , SEEK_END);
     lSize = ftell( fp );
     rewind( fp );
