@@ -6,7 +6,7 @@
 #include "options.h"
 #include "util.h"
 
-#define VERSION "0.0.1"
+#define VERSION "0.0.2"
 
 static void printHelp();
 static void printVersion();
@@ -50,7 +50,7 @@ static char *getKeyboardDeviceFileName() {
 
 void parseOptions(int argc, char **argv, Config *config) {
    config->deviceFile = getKeyboardDeviceFileName();
-   config->logFile = "/var/log/skeylogger.log";
+   config->logFile = "/var/log/keywlogger.log";
 
    int index;
    int opt = 0;
@@ -80,7 +80,7 @@ void parseOptions(int argc, char **argv, Config *config) {
 }
 
 static void printHelp() {
-   printf("%s\n", "Usage: skeylogger [OPTION]\n"
+   printf("%s\n", "Usage: keywlogger [OPTION]\n"
           "Logs pressed keys\n\n"
           "  -h, --help\t\tDisplays this help message\n"
           "  -v, --version\t\tDisplays version information\n"
@@ -89,5 +89,5 @@ static void printHelp() {
 }
 
 static void printVersion() {
-   printf("%s\n", "Simple Key Logger version " VERSION);
+   printf("%s\n", "Key-Word-Logger version " VERSION);
 }
