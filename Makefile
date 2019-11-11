@@ -1,7 +1,7 @@
 CC := gcc
 CFLAGS := -g -Wall
-BIN_NAME := skeylogger
-OBJS := skeylogger.o key_util.o options.o config.o
+BIN_NAME := keywlogger
+OBJS := keywlogger.o key_util.o options.o config.o
 
 all: $(BIN_NAME)
 
